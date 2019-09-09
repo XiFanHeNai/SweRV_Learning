@@ -1,0 +1,39 @@
+debImport "+incdir+/home/baicai/__working/swerv/swerv_eh1/design/lib" \
+          "+incdir+/home/baicai/__working/swerv/swerv_eh1/design/include" \
+          "/home/baicai/__working/swerv/swerv_eh1/configs/snapshots/default/common_defines.vh" \
+          "+incdir+/home/baicai/__working/swerv/swerv_eh1/design/dmi" \
+          "+incdir+/home/baicai/__working/swerv/swerv_eh1/configs/snapshots/default" \
+          "+libext+.v" \
+          "/home/baicai/__working/swerv/swerv_eh1/configs/snapshots/default/common_defines.vh" \
+          "/home/baicai/__working/swerv/swerv_eh1/design/include/def.sv" "-f" \
+          "/home/baicai/__working/swerv/swerv_eh1/design/flist.vcs" \
+          "/home/baicai/__working/swerv/swerv_eh1/testbench/tb_top_vcs.sv" \
+          "-I/home/baicai/__working/swerv/swerv_eh1/testbench" \
+          "/home/baicai/__working/swerv/swerv_eh1/testbench/ahb_sif.sv"
+debLoadSimResult /home/baicai/__working/swerv/swerv_eh1/tools/tb_top_vcs.fsdb
+wvCreateWindow
+verdiDockWidgetDisplay -dock widgetDock_WelcomePage
+verdiDockWidgetHide -dock widgetDock_WelcomePage
+srcDeselectAll -win $_nTrace1
+srcHBSelect "tb_top_vcs" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_top_vcs" -delim "."
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_<Inst._Tree>
+srcHBSelect "tb_top_vcs.rvtop" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_top_vcs.rvtop" -delim "."
+srcHBSelect "tb_top_vcs.rvtop.mem" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_top_vcs.rvtop.mem" -delim "."
+srcHBSelect "tb_top_vcs.rvtop.mem.icm" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_top_vcs.rvtop.mem.icm" -delim "."
+srcHBSelect "tb_top_vcs.rvtop.mem.icm.ic_tag_inst" -win $_nTrace1
+srcSetScope -win $_nTrace1 "tb_top_vcs.rvtop.mem.icm.ic_tag_inst" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ic_rd_hit\[0\]" -win $_nTrace1
+srcAddSelectedToWave -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "ic_debug_rd_way_en_ff\[2\]" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 552 11 4 -win $_nTrace1 -name "w_tout\[2\]" -ctrlKey off

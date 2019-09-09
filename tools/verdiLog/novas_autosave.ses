@@ -1,0 +1,75 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_I-2014.03
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+[hb]
+postSimFile = /home/baicai/__working/swerv/swerv_eh1/tools/tb_top_vcs.fsdb
+syncTime = 56
+viewport = 65 24 1849 898 450 337 489 1853
+activeNode = "tb_top_vcs.rvtop.mem.icm.ic_tag_inst"
+activeScope = "tb_top_vcs.rvtop.mem.icm.ic_tag_inst"
+activeFile = "/home/baicai/__working/swerv/swerv_eh1/design/ifu/ifu_ic_mem.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 532
+baMode = True
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "tb_top_vcs.rvtop.mem.icm.ic_tag_inst"
+Scope2 = "tb_top_vcs.rvtop.mem.icm"
+Scope3 = "tb_top_vcs.rvtop.mem"
+Scope4 = "tb_top_vcs.rvtop.mem.Gen_dccm_enable.dccm"
+Scope5 = "tb_top_vcs.rvtop"
+Scope6 = "tb_top_vcs"
+Scope7 = "ifu_iccm_mem"
+multipleSelection = 1 534 16 0 0
+sdfCheckUndef = FALSE
+[hb.sourceTab.1]
+scope = tb_top_vcs.rvtop.mem.icm.ic_tag_inst
+File = /home/baicai/__working/swerv/swerv_eh1/design/ifu/ifu_ic_mem.sv
+Line = 533
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/baicai/__working/swerv/swerv_eh1/tools
+design = DebussyLib
+hostCommand = hostCommand +incdir+/home/baicai/__working/swerv/swerv_eh1/design/lib +incdir+/home/baicai/__working/swerv/swerv_eh1/design/include /home/baicai/__working/swerv/swerv_eh1/configs/snapshots/default/common_defines.vh +incdir+/home/baicai/__working/swerv/swer\
+v_eh1/design/dmi +incdir+/home/baicai/__working/swerv/swerv_eh1/configs/snapshots/default +libext+.v /home/baicai/__working/swerv/swerv_eh1/configs/snapshots/default/common_defines.vh /home/baicai/__working/swerv/swerv_eh1/design/include/def.sv -f /home/ba\
+icai/__working/swerv/swerv_eh1/design/flist.vcs /home/baicai/__working/swerv/swerv_eh1/testbench/tb_top_vcs.sv -I/home/baicai/__working/swerv/swerv_eh1/testbench /home/baicai/__working/swerv/swerv_eh1/testbench/ahb_sif.sv
+[nMemoryManager]
+FsdbFile = /home/baicai/__working/swerv/swerv_eh1/tools/tb_top_vcs.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 30 1849 338 100 65
+SessionFile = /home/baicai/__working/swerv/swerv_eh1/tools/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSync = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

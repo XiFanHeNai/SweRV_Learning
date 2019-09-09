@@ -1,0 +1,848 @@
+{
+    "ObjArchives": [
+        {
+            "objects": [
+                [
+                    "B4u9e_d.o",
+                    378745
+                ]
+            ],
+            "archive": "archive.4/_11567_archive_1.a",
+            "size": 378745
+        }
+    ],
+    "CompUnits": {
+        "B4u9e_d": {
+            "mod": "tb_top_vcs",
+            "out": "B4u9e_d.o",
+            "bytes": 378745,
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.4/_11567_archive_1.a"
+        }
+    },
+    "Modules": {
+        "exu_alu_ctl": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "...MASTER...": {},
+        "dec": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "mem_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_64x25": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_128x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1536x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "_vcs_unit__4030523886": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ram_2048x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "lsu": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvbradder": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "dec_tlu_ctl_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_001B": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvdffs_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvsyncss": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "lsu_lsc_ctl": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvfindfirst1hot": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvfindfirst1": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ifu_aln_ctl_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffs_0007": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvdff_001C": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ifu_mem_ctl_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "toggle_sync": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffs_0002": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "dma_ctrl_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_001D": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "dec_dec_ctl": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "cmp_and_mux": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "configurable_gw": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ifu_compress_ctl": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffs_0005": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ifu_iccm_mem": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_64x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_512x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "dmi_wrapper": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ahb_sif": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "ifu": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0014": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_4096x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0012": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "lsu_trigger_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "dec_gpr_ctl_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "dec_trigger_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffsc": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "exu": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "lsu_ecc_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_128x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "lsu_clkdomain": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "lsu_bus_write_buffer_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "lsu_bus_intf_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "lsu_dccm_ctl_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffs": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0001": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_512x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0002": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0007": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_512x20": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0003": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0004": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0005": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_512x25": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvrangecheck_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvdff_0006": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_000A": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_000E": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ram_64x20": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_4096x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0010": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_128x25": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0011": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "axi4_to_ahb": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_256x20": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdff_0013": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvbtb_tag_hash": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvdff_0019": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvdff_001A": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvdffs_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffs_0003": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffs_0004": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvdffsc_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvtwoscomp_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvmaskandmatch_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvbtb_addr_hash": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ram_2048x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "rvbtb_ghr_hash": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rveven_paritygen": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "rvecc_decode_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_32768x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_16384x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_8192x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_3072x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_2048x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1024x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ram_768x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "axi4_to_ahb_0000": {
+            "Compiled": "Yes",
+            "Compiled Times": 4
+        },
+        "ram_256x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_128x39": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1024x20": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_128x20": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1024x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_256x34": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_4096x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1024x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_512x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_256x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_64x42": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1024x21": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_64x21": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        },
+        "ram_256x21": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_512x21": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_128x21": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_1024x25": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ram_256x25": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "ahb_to_axi4": {
+            "Compiled": "Yes",
+            "Compiled Times": 5
+        },
+        "tb_top_vcs": {
+            "Compiled": "Yes",
+            "Compiled Times": 2
+        }
+    },
+    "reusePaths": {
+        "KKwnp_d": {
+            "icPath": "csrc"
+        },
+        "QF395_d": {
+            "icPath": "csrc"
+        },
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "aJziF_d": {
+            "icPath": "csrc"
+        },
+        "MhLKD_d": {
+            "icPath": "csrc"
+        },
+        "p0r5a_d": {
+            "icPath": "csrc"
+        },
+        "p2rJU_d": {
+            "icPath": "csrc"
+        },
+        "BbZCR_d": {
+            "icPath": "csrc"
+        },
+        "jYbtK_d": {
+            "icPath": "csrc"
+        },
+        "reYIK_d": {
+            "icPath": "csrc"
+        },
+        "bV9yM_d": {
+            "icPath": "csrc"
+        },
+        "N4BRG_d": {
+            "icPath": "csrc"
+        },
+        "N2mpT_d": {
+            "icPath": "csrc"
+        },
+        "RTjLY_d": {
+            "icPath": "csrc"
+        },
+        "hhdm6_d": {
+            "icPath": "csrc"
+        },
+        "JycKN_d": {
+            "icPath": "csrc"
+        },
+        "qK0mB_d": {
+            "icPath": "csrc"
+        },
+        "mHCzB_d": {
+            "icPath": "csrc"
+        },
+        "uBsUh_d": {
+            "icPath": "csrc"
+        },
+        "NtF8b_d": {
+            "icPath": "csrc"
+        },
+        "nc6we_d": {
+            "icPath": "csrc"
+        },
+        "YbEs2_d": {
+            "icPath": "csrc"
+        },
+        "JkHYz_d": {
+            "icPath": "csrc"
+        },
+        "Crn5e_d": {
+            "icPath": "csrc"
+        },
+        "QD6MH_d": {
+            "icPath": "csrc"
+        },
+        "QPTnA_d": {
+            "icPath": "csrc"
+        },
+        "prDmc_d": {
+            "icPath": "csrc"
+        },
+        "iq1pR_d": {
+            "icPath": "csrc"
+        },
+        "gthL2_d": {
+            "icPath": "csrc"
+        },
+        "zQ6pu_d": {
+            "icPath": "csrc"
+        },
+        "N2prQ_d": {
+            "icPath": "csrc"
+        },
+        "QRIif_d": {
+            "icPath": "csrc"
+        },
+        "UqrjQ_d": {
+            "icPath": "csrc"
+        },
+        "nT02p_d": {
+            "icPath": "csrc"
+        },
+        "NLQWF_d": {
+            "icPath": "csrc"
+        },
+        "THDhV_d": {
+            "icPath": "csrc"
+        },
+        "Y7smD_d": {
+            "icPath": "csrc"
+        },
+        "z8xxw_d": {
+            "icPath": "csrc"
+        },
+        "mkpmk_d": {
+            "icPath": "csrc"
+        },
+        "rfPhB_d": {
+            "icPath": "csrc"
+        },
+        "nEeq5_d": {
+            "icPath": "csrc"
+        },
+        "wN6LK_d": {
+            "icPath": "csrc"
+        },
+        "A1pVd_d": {
+            "icPath": "csrc"
+        },
+        "KhPTP_d": {
+            "icPath": "csrc"
+        },
+        "WYpFN_d": {
+            "icPath": "csrc"
+        },
+        "aJc2Y_d": {
+            "icPath": "csrc"
+        },
+        "RjLew_d": {
+            "icPath": "csrc"
+        },
+        "pBTdY_d": {
+            "icPath": "csrc"
+        },
+        "uNcaR_d": {
+            "icPath": "csrc"
+        },
+        "iYhEV_d": {
+            "icPath": "csrc"
+        },
+        "VWiCI_d": {
+            "icPath": "csrc"
+        },
+        "rKWIy_d": {
+            "icPath": "csrc"
+        },
+        "TF4zu_d": {
+            "icPath": "csrc"
+        },
+        "p8ICY_d": {
+            "icPath": "csrc"
+        },
+        "bCgdn_d": {
+            "icPath": "csrc"
+        },
+        "qM1bm_d": {
+            "icPath": "csrc"
+        },
+        "EH8H4_d": {
+            "icPath": "csrc"
+        },
+        "xfmAy_d": {
+            "icPath": "csrc"
+        },
+        "AsdZr_d": {
+            "icPath": "csrc"
+        },
+        "Eq5Wu_d": {
+            "icPath": "csrc"
+        },
+        "pRR6k_d": {
+            "icPath": "csrc"
+        },
+        "rAdC7_d": {
+            "icPath": "csrc"
+        },
+        "t5rNq_d": {
+            "icPath": "csrc"
+        },
+        "RyyQj_d": {
+            "icPath": "csrc"
+        },
+        "xKfV6_d": {
+            "icPath": "csrc"
+        },
+        "FbYrW_d": {
+            "icPath": "csrc"
+        },
+        "F3Qfh_d": {
+            "icPath": "csrc"
+        },
+        "w3Zhs_d": {
+            "icPath": "csrc"
+        },
+        "aKriW_d": {
+            "icPath": "csrc"
+        },
+        "AZP6T_d": {
+            "icPath": "csrc"
+        },
+        "c7KJP_d": {
+            "icPath": "csrc"
+        },
+        "gQmLY_d": {
+            "icPath": "csrc"
+        },
+        "jjMR6_d": {
+            "icPath": "csrc"
+        },
+        "eNGiV_d": {
+            "icPath": "csrc"
+        },
+        "c5Pqh_d": {
+            "icPath": "csrc"
+        },
+        "dVvAU_d": {
+            "icPath": "csrc"
+        },
+        "EJVxs_d": {
+            "icPath": "csrc"
+        },
+        "fvi7h_d": {
+            "icPath": "csrc"
+        },
+        "rbRya_d": {
+            "icPath": "csrc"
+        },
+        "niRxv_d": {
+            "icPath": "csrc"
+        },
+        "vpjr4_d": {
+            "icPath": "csrc"
+        },
+        "JqmKe_d": {
+            "icPath": "csrc"
+        },
+        "rMgEE_d": {
+            "icPath": "csrc"
+        },
+        "x8UGk_d": {
+            "icPath": "csrc"
+        },
+        "eqAwH_d": {
+            "icPath": "csrc"
+        },
+        "fupSi_d": {
+            "icPath": "csrc"
+        },
+        "dhWJa_d": {
+            "icPath": "csrc"
+        },
+        "LMenD_d": {
+            "icPath": "csrc"
+        },
+        "gEYbY_d": {
+            "icPath": "csrc"
+        },
+        "M6knD_d": {
+            "icPath": "csrc"
+        },
+        "aB2hJ_d": {
+            "icPath": "csrc"
+        },
+        "H6CNv_d": {
+            "icPath": "csrc"
+        },
+        "sbQpB_d": {
+            "icPath": "csrc"
+        },
+        "Ysymm_d": {
+            "icPath": "csrc"
+        },
+        "TFHTx_d": {
+            "icPath": "csrc"
+        },
+        "mPYwx_d": {
+            "icPath": "csrc"
+        },
+        "jjmmQ_d": {
+            "icPath": "csrc"
+        },
+        "LdHm7_d": {
+            "icPath": "csrc"
+        },
+        "brhqz_d": {
+            "icPath": "csrc"
+        },
+        "mbMEW_d": {
+            "icPath": "csrc"
+        },
+        "H3dyI_d": {
+            "icPath": "csrc"
+        },
+        "vHBxj_d": {
+            "icPath": "csrc"
+        },
+        "LezjP_d": {
+            "icPath": "csrc"
+        },
+        "WJghQ_d": {
+            "icPath": "csrc"
+        },
+        "h3i7E_d": {
+            "icPath": "csrc"
+        },
+        "Lk9D0_d": {
+            "icPath": "csrc"
+        },
+        "zZe0j_d": {
+            "icPath": "csrc"
+        },
+        "BaTS5_d": {
+            "icPath": "csrc"
+        },
+        "az2ax_d": {
+            "icPath": "csrc"
+        },
+        "iKjqd_d": {
+            "icPath": "csrc"
+        },
+        "kdSEw_d": {
+            "icPath": "csrc"
+        },
+        "kDUH9_d": {
+            "icPath": "csrc"
+        },
+        "jr8Ag_d": {
+            "icPath": "csrc"
+        },
+        "muqi3_d": {
+            "icPath": "csrc"
+        },
+        "pwEP1_d": {
+            "icPath": "csrc"
+        },
+        "REKrn_d": {
+            "icPath": "csrc"
+        },
+        "PChwk_d": {
+            "icPath": "csrc"
+        }
+    }
+}
