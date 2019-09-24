@@ -1070,7 +1070,7 @@ end : cam_array
 
    reg_pkt_t i0r, i1r;
 
-
+   // CAI: i0r is the instr coming from dec.
    assign i0r.rs1[4:0] = i0[19:15];
    assign i0r.rs2[4:0] = i0[24:20];
    assign i0r.rd[4:0] = i0[11:7];
@@ -1348,9 +1348,11 @@ end : cam_array
 
    
    // allow illegals to flow down the pipe
+   // CAI: only pass valid to next stage when there is no block and flush.
    assign dec_i0_decode_d = i0_valid_d & ~i0_block_d & ~flush_lower_wb & ~flush_final_e3 & ~freeze;
 
-   // define i0 legal decode
+   // define i0 legal decode,
+   // CAI: a valid legal instr.
    assign i0_legal_decode_d = dec_i0_decode_d & i0_legal & ~freeze;
    
    // only decode i1 if legal and i0 not illegal - csr's cant decode as i1
@@ -1437,7 +1439,8 @@ end : cam_array
 
    
 // scheduling logic for primary and secondary alu's
-   
+   // CAI: dependency check. cause the rd is passed through every stage of pipeline, so it is 
+   //      easy to check the dependency simply by comparing rdidx and rsidx
    assign i0_rs1_depend_i0_e1 = dec_i0_rs1_en_d & e1d.i0v & (e1d.i0rd[4:0] == i0r.rs1[4:0]);
    assign i0_rs1_depend_i0_e2 = dec_i0_rs1_en_d & e2d.i0v & (e2d.i0rd[4:0] == i0r.rs1[4:0]);
    assign i0_rs1_depend_i0_e3 = dec_i0_rs1_en_d & e3d.i0v & (e3d.i0rd[4:0] == i0r.rs1[4:0]);
@@ -1653,7 +1656,9 @@ end : cam_array
 					({32{e3d.i1rs2bype3[0]}} & i0_result_wb_eff[31:0]);
    
 // order the producers as follows:  i1_e1 - 1, i0_e1 - 2, i1_e2 - 3, ..., i1_wb - 9, i0_wb - 10
-
+// CAI: at the same stage in each pipeline, i0 in pipe 0 is elder than i1 in pipe 1, all the time.
+//      so the most frash dependency exists between a new instr and instr in e1 stage of pipe 0.
+// CAI: its fwd data comes from exc (x=1,2,3 ...). 
    
    assign {i0_rs1_class_d, i0_rs1_depth_d[3:0]} = 
 						  (i0_rs1_depend_i1_e1) ? { i1_e1c, 4'd1 } :
@@ -1703,7 +1708,7 @@ end : cam_array
 						  (i1_rs2_depend_i1_wb) ? { i1_wbc, 4'd9 } :
 						  (i1_rs2_depend_i0_wb) ? { i0_wbc, 4'd10 } : '0;
 
-   
+   // CAI: the rs1 data of instr in i0 is fwd from e1 stage. it may come from pipe 0 or 1. 
    assign i0_rs1_match_e1 = (i0_rs1_depth_d[3:0] == 4'd1 | 
 			     i0_rs1_depth_d[3:0] == 4'd2);
    
@@ -1722,17 +1727,15 @@ end : cam_array
    assign i0_rs2_match_e3 = (i0_rs2_depth_d[3:0] == 4'd5 | 
 			     i0_rs2_depth_d[3:0] == 4'd6);
 
+   // CAI: the rs1 data of instr in i0 is fwd from e1 or e2 stage. it may come from pipe 0 or 1.
    assign i0_rs1_match_e1_e2 = i0_rs1_match_e1 | i0_rs1_match_e2;
    assign i0_rs1_match_e1_e3 = i0_rs1_match_e1 | i0_rs1_match_e2 | i0_rs1_match_e3;
    
    assign i0_rs2_match_e1_e2 = i0_rs2_match_e1 | i0_rs2_match_e2;
    assign i0_rs2_match_e1_e3 = i0_rs2_match_e1 | i0_rs2_match_e2 | i0_rs2_match_e3;
-   
-   
-   
-   
 
-   assign i0_secondary_d = ((i0_dp.alu & (i0_rs1_class_d.load | i0_rs1_class_d.mul) & i0_rs1_match_e1_e2) |
+   assign i0_secondary_d = 
+            ((i0_dp.alu & (i0_rs1_class_d.load | i0_rs1_class_d.mul) & i0_rs1_match_e1_e2) |
 			    (i0_dp.alu & (i0_rs2_class_d.load | i0_rs2_class_d.mul) & i0_rs2_match_e1_e2) |
 			    (i0_dp.alu & i0_rs1_class_d.sec & i0_rs1_match_e1_e3) |                      
 			    (i0_dp.alu & i0_rs2_class_d.sec & i0_rs2_match_e1_e3)) & ~disable_secondary;
@@ -1999,6 +2002,7 @@ end : cam_array
    dest_pkt_t e1d_in, e2d_in, e3d_in, e4d_in;
 
    assign dd.i0rd[4:0] = i0r.rd[4:0];
+   // CAI:means a valid instr with rdwen.
    assign dd.i0v = i0_rd_en_d & i0_legal_decode_d;
    assign dd.i0valid =              dec_i0_decode_d;  // has flush_final_e3
 
@@ -2023,7 +2027,7 @@ end : cam_array
    
    
    assign i0_pipe_en[5] = dec_i0_decode_d;
-   
+   // CAI: only three stage ahead of is able to be frozen. the behind two can not be frozen.
    rvdffs #(3) i0cg0ff (.*, .clk(active_clk), .en(~freeze), .din(i0_pipe_en[5:3]), .dout(i0_pipe_en[4:2]));
    rvdff  #(2) i0cg1ff (.*, .clk(active_clk),               .din(i0_pipe_en[2:1]), .dout(i0_pipe_en[1:0]));   
 
